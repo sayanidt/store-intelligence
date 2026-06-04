@@ -1,4 +1,15 @@
+---
+title: Store Intelligence API
+emoji: 🏬
+colorFrom: pink
+colorTo: indigo
+sdk: docker
+app_port: 8000
+pinned: false
+---
+
 # Store Intelligence API
+
 
 Store Intelligence is an edge-to-cloud analytical pipeline designed for Purplle beauty retail stores. It ingests computer vision tracking events from cameras, derives visitor sessions, calculates store-level analytics (funnels, queues, dwell times), and raises real-time operational alerts for floor staff.
 

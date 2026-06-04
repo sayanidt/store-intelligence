@@ -10,7 +10,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 
-from app.database import init_db, load_pos_csv
+from app.database import init_db, load_pos_csv, load_sample_events
 from app.ingestion import router as ingestion_router
 from app.metrics import router as metrics_router
 from app.funnel import router as funnel_router
@@ -26,12 +26,13 @@ logger = logging.getLogger("store_intelligence")
 async def lifespan(app: FastAPI):
     """
     Lifespan manager handling app startup and shutdown logic.
-    On startup: Initializes SQLite schemas and imports the POS CSV transactions.
+    On startup: Initializes SQLite schemas, imports the POS CSV transactions, and loads sample events.
     """
     logger.info("Starting Store Intelligence Application...")
     try:
         init_db()
         load_pos_csv()
+        load_sample_events()
     except Exception as e:
         logger.critical(f"Failed during application startup sequence: {e}", exc_info=True)
     yield
