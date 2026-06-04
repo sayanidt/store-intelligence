@@ -1,0 +1,228 @@
+{
+  "stores": [
+    {
+      "store_id": "STORE_1",
+      "store_name": "Purplle Beauty Store 1",
+      "open_hours": "09:00–21:00",
+      "cameras": {
+        "cam1": "ENTRY",
+        "cam2": "FLOOR",
+        "cam3": "BILLING"
+      },
+      "zones": [
+        {
+          "zone_id": "ENTRY_THRESHOLD",
+          "zone_name": "Entry Threshold",
+          "zone_type": "ENTRY",
+          "is_revenue_zone": false,
+          "camera_coverage": ["cam1"],
+          "polygon": [0.0, 0.0, 1.0, 0.1]
+        },
+        {
+          "zone_id": "FOH_MAIN",
+          "zone_name": "Main Floor Front of House",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": false,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.1, 0.1, 0.9, 0.8]
+        },
+        {
+          "zone_id": "BOH",
+          "zone_name": "Back of House Storage",
+          "zone_type": "STORAGE",
+          "is_revenue_zone": false,
+          "camera_coverage": [],
+          "polygon": [0.8, 0.8, 1.0, 1.0]
+        },
+        {
+          "zone_id": "CASH_COUNTER",
+          "zone_name": "Cash Counter Billing",
+          "zone_type": "BILLING",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam3"],
+          "polygon": [0.1, 0.8, 0.4, 0.95]
+        },
+        {
+          "zone_id": "MAKEUP_UNIT_1",
+          "zone_name": "Makeup Unit 1",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.7, 0.2, 0.95, 0.4]
+        },
+        {
+          "zone_id": "MAKEUP_UNIT_2",
+          "zone_name": "Makeup Unit 2",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.7, 0.4, 0.95, 0.6]
+        },
+        {
+          "zone_id": "GONDOLA_1",
+          "zone_name": "Gondola Display 1",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.4, 0.3, 0.6, 0.45]
+        },
+        {
+          "zone_id": "GONDOLA_2",
+          "zone_name": "Gondola Display 2",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.4, 0.5, 0.6, 0.65]
+        },
+        {
+          "zone_id": "WALL_UNITS_LEFT",
+          "zone_name": "Shelving Wall Left",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.02, 0.2, 0.15, 0.7]
+        },
+        {
+          "zone_id": "WALL_UNITS_RIGHT",
+          "zone_name": "Shelving Wall Right",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.85, 0.2, 0.98, 0.7]
+        },
+        {
+          "zone_id": "WALL_UNITS_BACK",
+          "zone_name": "Shelving Wall Back",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.2, 0.8, 0.7, 0.95]
+        }
+      ]
+    },
+    {
+      "store_id": "STORE_2",
+      "store_name": "Purplle Beauty Store 2",
+      "open_hours": "09:00–21:00",
+      "cameras": {
+        "cam1": "ENTRY",
+        "cam2": "FLOOR",
+        "cam3": "BILLING"
+      },
+      "zones": [
+        {
+          "zone_id": "ENTRY_THRESHOLD",
+          "zone_name": "Entry Threshold",
+          "zone_type": "ENTRY",
+          "is_revenue_zone": false,
+          "camera_coverage": ["cam1"],
+          "polygon": [0.0, 0.0, 1.0, 0.1]
+        },
+        {
+          "zone_id": "SALM",
+          "zone_name": "Salm Brand Shelf",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.1, 0.15, 0.25, 0.35]
+        },
+        {
+          "zone_id": "TFS",
+          "zone_name": "TFS Brand Shelf",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.1, 0.35, 0.25, 0.55]
+        },
+        {
+          "zone_id": "MINIMALIS",
+          "zone_name": "Minimalis Brand Shelf",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.1, 0.55, 0.25, 0.75]
+        },
+        {
+          "zone_id": "AQUALOGI",
+          "zone_name": "Aqualogi Brand Shelf",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.75, 0.15, 0.9, 0.35]
+        },
+        {
+          "zone_id": "FOXTAL",
+          "zone_name": "Foxtal Brand Shelf",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.75, 0.35, 0.9, 0.55]
+        },
+        {
+          "zone_id": "JC",
+          "zone_name": "JC Brand Shelf",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.75, 0.55, 0.9, 0.75]
+        },
+        {
+          "zone_id": "MENS",
+          "zone_name": "Mens Products Section",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.3, 0.2, 0.45, 0.35]
+        },
+        {
+          "zone_id": "LOREAL",
+          "zone_name": "L'oreal Section",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.3, 0.4, 0.45, 0.55]
+        },
+        {
+          "zone_id": "BEAUT",
+          "zone_name": "Beaut Section",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.3, 0.6, 0.45, 0.75]
+        },
+        {
+          "zone_id": "FRAGRANCE",
+          "zone_name": "Fragrance And Nail Unit Area",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.55, 0.2, 0.7, 0.4]
+        },
+        {
+          "zone_id": "MAKEUP_UNIT",
+          "zone_name": "Center Makeup Station",
+          "zone_type": "DISPLAY",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.55, 0.45, 0.7, 0.7]
+        },
+        {
+          "zone_id": "CASH_COUNTER",
+          "zone_name": "Cash Counter Billing Area",
+          "zone_type": "BILLING",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam3"],
+          "polygon": [0.1, 0.8, 0.4, 0.95]
+        },
+        {
+          "zone_id": "ACCESSORIES",
+          "zone_name": "Accessories Section",
+          "zone_type": "SHELF",
+          "is_revenue_zone": true,
+          "camera_coverage": ["cam2"],
+          "polygon": [0.5, 0.8, 0.9, 0.95]
+        }
+      ]
+    }
+  ]
+}

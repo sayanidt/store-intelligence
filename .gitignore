@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite databases
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite3
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments and IDEs
+.env
+venv/
+.venv/
+.vscode/
+.idea/

@@ -1,0 +1,5 @@
+order_id,store_id,order_date,order_time,total_amount
+order_101,store_123,2026-06-04,12:15:00,120.50
+order_102,store_123,2026-06-04,12:20:00,45.00
+order_103,store_123,2026-06-04,12:45:00,88.20
+order_104,store_456,2026-06-04,13:00:00,250.00
