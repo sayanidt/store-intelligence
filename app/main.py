@@ -7,7 +7,7 @@ import logging
 import sqlite3
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, RedirectResponse
 from starlette.middleware.base import BaseHTTPMiddleware
 
 from app.database import init_db, load_pos_csv, load_sample_events
@@ -127,3 +127,9 @@ app.include_router(funnel_router)
 app.include_router(heatmap_router)
 app.include_router(anomalies_router)
 app.include_router(health_router)
+
+
+@app.get("/", include_in_schema=False)
+async def root_redirect():
+    return RedirectResponse(url="/docs")
+
